@@ -3,41 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Hometown - Barishal</title>
+    <title>E-Commerce</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Hometown Barishal</h1>
-    </header>
-    <main>
-        <section class="image">
-            <img src="images/Guthia_Mosque_of_Barishal.jpg" alt="Image of Barishal">
-        </section>
-        <section class="description">
-            <p>Hometown is the city or town where one grows up or the place of one's principal residence. It is a place where one passes the lion’s share of his lifetime in the midst of peace, tranquility and joy. <br> The name of my hometown is <b>Barishal</b>. Barishal is a beautiful place known for its rich history, vibrant culture, and warm people. It is famous for its historical landmarks and delicious cuisine. Barishal is a beautiful city located in southern Bangladesh known for its rivers, greenery, and cultural heritage. It is often called the <q>Venice of Bengal</q> because of its numerous rivers and canals that flow through the region. The city is situated on the banks of the <q>Kirtankhola River</q>, making it a major hub for trade and transportation. <br> Barishal is famous for its scenic beauty and historical landmarks. The <q>Durga Sagar</q> one of the largest ponds in Bangladesh is a popular tourist attraction. The city is also home to the ancient <q>Bells Park</q>, <q>Oxford Mission Church</q> and the renowned <q>Kuakata Beach</q> which offers breathtaking views of both sunrise and sunset. The <q>Floating Guava market</q> in Swarupkathi is another unique feature of Barishal attracting visitors from all over the country and foreign tourists. <br> Agriculture plays a significant role in the local economy, with rice, betel leaf, and guava being the major products. The people of Barishal are known for their hospitality and cultural richness, celebrating various festivals with great enthusiasm. The city also has a strong educational background with institutions like <q>Barishal University</q>,<q>Government BM(Brojomohun College)College</q>,<q>Barishal Zilla School</q> and many more contributing to higher education. <br> In conclusion, Barishal is more than just a city it’s a symphony of rivers, traditions and timeless beauty. Its flowing waterways whisper tales of history while its vibrant culture and warm-hearted people create an atmosphere of belonging. From the golden hues of Kuakata’s horizon to the rhythmic waves of the Kirtankhola. Barishal is a place where nature and heritage exist in perfect harmony. It’s not just a hometown, it’s a feeling one that stays with you no matter where life takes you.</p>
-        </section>
-        <section class="history">
-            <h2>Historical Places</h2>
-            <ol>
-                <li>Kuakata Sea Beach</li>
-                <li>Guthia Mosque</li>
-                <li>Floating Guava Market</li>
-                <li>Durga Sagar</li>
-            </ol>
-        </section>
-        <section class="food">
-            <h2>Popular Foods</h2>
-            <ul>
-                <li>Shorshe ilish or Mustard Hilsha</li>
-                <li>Molida</li>
-                <li>Traditional Gouro Nodi's Doi</li>
-                <li>Puffed Rice</li>
-            </ul>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 [Md. Jawad-Ul-Karim]. All Rights Reserved.</p>
-    </footer>
+    <div class="main">
+        <h2>Registration Form</h2>
+        <form action="">
+            <label for="first">First Name:</label>
+            <input type="text" id="first" name="first" required /><br><br>
+
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required /><br><br>
+
+            
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password"
+                   pattern="^(?=.*\d)(?=.*[a-zA-Z])(?=.*[^a-zA-Z0-9])\S{8,}$" 
+                   title="Password must contain at least one number, 
+                           one alphabet, one symbol, and be at 
+                           least 8 characters long" required /> <br><br>
+
+           
+            <label for="mobile">Contact:</label>
+            <input type="text" id="mobile" name="mobile" maxlength="10" required /><br><br>
+
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required><br><br>
+                <option value="male">
+                    Male
+                </option>
+                <option value="female">
+                    Female
+                </option>
+                <option value="other">
+                    Other
+                </option>
+            </select>
+         
+
+            <button type="submit">
+                Submit
+            </button>
+        </form>
+    </div>
 </body>
 </html>
